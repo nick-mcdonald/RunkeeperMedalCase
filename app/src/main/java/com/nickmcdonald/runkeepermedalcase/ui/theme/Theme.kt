@@ -12,13 +12,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
-private val DarkColorScheme = darkColorScheme(
+private val RunKeeperDarkColorScheme = darkColorScheme(
     primary = Color(0xFFFFFFFF),
     secondary = Color(0xFF848484),
     tertiary = Color(0xFF444444)
 )
 
-private val LightColorScheme = lightColorScheme(
+private val RunKeeperLightColorScheme = lightColorScheme(
     primary = PrimaryColor,
     onPrimary = PrimaryFontColor,
     primaryContainer = PrimaryColor,
@@ -60,23 +60,13 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun RunKeeperMedalCaseTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {
-    val colorScheme = when {
-        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-            val context = LocalContext.current
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-        }
-
-        darkTheme -> DarkColorScheme
-        else -> LightColorScheme
-    }
+    val colorScheme = if (darkTheme) RunKeeperDarkColorScheme else RunKeeperLightColorScheme
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = RunKeeperTypography,
         content = content
     )
 }
