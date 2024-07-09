@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.nickmcdonald.runkeppermedalcase"
+    namespace = "com.nickmcdonald.runkeepermedalcase"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.nickmcdonald.runkeppermedalcase"
+        applicationId = "com.nickmcdonald.runkeepermedalcase"
         minSdk = 28
         targetSdk = 34
         versionCode = 1

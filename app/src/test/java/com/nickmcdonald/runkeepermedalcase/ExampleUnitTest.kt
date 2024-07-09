@@ -1,4 +1,4 @@
-package com.nickmcdonald.runkeppermedalcase
+package com.nickmcdonald.runkeepermedalcase
 
 import org.junit.Test
 

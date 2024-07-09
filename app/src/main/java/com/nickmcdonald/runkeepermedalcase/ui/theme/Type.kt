@@ -1,4 +1,4 @@
-package com.nickmcdonald.runkeppermedalcase.ui.theme
+package com.nickmcdonald.runkeepermedalcase.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

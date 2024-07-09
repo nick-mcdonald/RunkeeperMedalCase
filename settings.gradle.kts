@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RunkepperMedalCase"
+rootProject.name = "RunKeeperMedalCase"
 include(":app")
