@@ -14,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.nickmcdonald.runkeepermedalcase.models.Achievement
+import com.nickmcdonald.runkeepermedalcase.ui.theme.RunKeeperTypography
 
 @Composable
 fun MedalSectionHeader(
@@ -29,7 +30,7 @@ fun MedalSectionHeader(
             .height(40.dp)
             .padding(8.dp)
     ){
-        Text(text = name, color = MaterialTheme.colorScheme.onSecondaryContainer)
+        Text(text = name, color = MaterialTheme.colorScheme.onSecondaryContainer, style = RunKeeperTypography.titleMedium)
         Spacer(modifier = Modifier.weight(weight = 1F))
         Text("$numAchieved of ${achievements.count()}", color = MaterialTheme.colorScheme.onTertiaryContainer)
     }

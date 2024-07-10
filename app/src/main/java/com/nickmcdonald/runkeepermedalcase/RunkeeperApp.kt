@@ -4,6 +4,7 @@ import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
 import androidx.compose.material.icons.filled.MoreVert
@@ -16,8 +17,10 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.unit.dp
 import com.nickmcdonald.runkeepermedalcase.models.achievements
 import com.nickmcdonald.runkeepermedalcase.ui.MedalCase
+import com.nickmcdonald.runkeepermedalcase.ui.theme.RunKeeperTypography
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -34,7 +37,7 @@ fun RunkeeperApp(modifier: Modifier = Modifier) {
                     actionIconContentColor = MaterialTheme.colorScheme.onPrimaryContainer,
                 ),
                 title = {
-                        Text(text = "Achievements")
+                        Text(text = "Achievements", style = RunKeeperTypography.titleLarge)
                 },
                 navigationIcon = {
                     IconButton(onClick = { /* do something */ }) {

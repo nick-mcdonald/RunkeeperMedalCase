@@ -19,8 +19,8 @@ fun MedalCase(
 ) {
     LazyVerticalGrid(
         columns = GridCells.Adaptive(minSize = 180.dp),
-        horizontalArrangement = Arrangement.spacedBy(16.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp),
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        verticalArrangement = Arrangement.spacedBy(24.dp),
         contentPadding = innerPadding,
     ) {
         achievementList.forEach { (sectionName, achievements) ->
