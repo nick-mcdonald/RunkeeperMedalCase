@@ -32,13 +32,7 @@ fun MedalCase(
             item(
                 span = { GridItemSpan(maxLineSpan) }
             ) {
-                Text(
-                    "This is section $sectionName",
-                    Modifier
-                        .border(width=1.dp, color=Color.Gray)
-                        .height(80.dp)
-                        .wrapContentSize()
-                )
+                MedalSectionHeader(name = sectionName, achievements = achievements)
             }
 
             items(

@@ -25,6 +25,7 @@ private val RunKeeperLightColorScheme = lightColorScheme(
     onPrimaryContainer = PrimaryFontColor,
     secondaryContainer = HeaderColor,
     onSecondaryContainer = HeaderFontColor,
+    onTertiaryContainer = HeaderSecondaryColor,
     background = SurfaceColor,
     onBackground = SurfaceFontColor,
     surface = SurfaceColor,
