@@ -16,6 +16,8 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.ui.input.nestedscroll.nestedScroll
+import com.nickmcdonald.runkeepermedalcase.models.achievements
+import com.nickmcdonald.runkeepermedalcase.ui.MedalCase
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -53,6 +55,9 @@ fun RunkeeperApp(modifier: Modifier = Modifier) {
             )
         },
     ) { innerPadding ->
-        MedalCase(innerPadding = innerPadding)
+        MedalCase(
+            achievementList = achievements,
+            innerPadding = innerPadding
+        )
     }
 }
