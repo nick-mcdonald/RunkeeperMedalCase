@@ -20,7 +20,7 @@ fun MedalSectionHeader(
     name: String,
     achievements: List<Achievement>,
 ) {
-    val numAchieved = achievements.map { a -> if(a.achievedAt != null) 1 else 0 }.sum()
+    val numAchieved = achievements.map { if(it.achievedAt != null) 1 else 0 }.sum()
 
     Row (
         verticalAlignment = Alignment.CenterVertically,
